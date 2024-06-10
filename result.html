@@ -1,0 +1,45 @@
+<html>
+
+<body>
+
+<h1>Result</h1>
+<p id = "res"></p>
+
+<script>
+
+var data = window.location.search;
+var params = new URLSearchParams(data);
+
+var name= params.get("name");
+var email= params.get("email");
+var mobile= params.get("mobile");
+var city= params.get("city");
+var zila= params.get("zila");
+var village= params.get("village");
+var fathersname= params.get("fathersname");
+var mothersname= params.get("mothersname");
+var occupation= params.get("occupation");
+var nationality= params.get("nationality");
+var getdata="Name:" + name + "<br>";
+    getdata +="Email:" + email + "<br>"; 
+    getdata +="Mobile:" + mobile + "<br>";
+    getdata +="City:" + city + "<br>";
+    getdata +="Zila:" + zila + "<br>";
+    getdata +="Village:" + village + "<br>";
+    getdata +="Father's Name :" + fathersname + "<br>";
+    getdata +="Mother's Name :" + mothersname + "<br>";
+    getdata +="Occupation:" + occupation + "<br>";
+    getdata +="Nationality:" + nationality ;
+    document.getElementById("res").innerHTML=getdata;
+
+
+
+
+</script>
+
+</body>
+
+
+
+
+</html>
